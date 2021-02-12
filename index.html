@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Web Series</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+            <h1> Web Series</h1>
+            <div class="content">
+                    <div class="form">
+                        <form method="POST" onsubmit="return addShow(this.title.value, this.director.value, this.stars.value, this.streaming.value)" >
+                           <p><div class="label"> <label for="title">Title:</label></div>
+                            <input type="text" id="title" name="title" required>
+                            </p>
+                            <p><div class="label"> <label for="stars">Stars:</label> </div>
+                             <input type="text" id="stars" name="stars" required>
+                             </p>
+                             <p>
+                             <div class="label"> <label for="director">Director:</label> </div>
+                             <input type="text" id="director" name="director" required>
+                             </p>
+                             <p>
+                             <div class="label">  <label for="streaming">Streaming On:</label> </div>
+                              <select name="streming on" id="streaming">
+                                <option value="none" selected>Select</option>
+                                <option value="Netflix">Netflix</option>
+                                <option value="Amazon Prime">Amazon Prime</option>
+                                <option value="Hotstar">Hotstar</option>
+                                <option value="MX Player">MX Player</option>
+                                <option value="others">Others</option>
+                             </select>
+                            
+                            </p>
+                            <p>
+                            <button class="add" type="submit">Add</button>
+                            </p>
+                            
+                        </form>
+                    </div>
+                    <div class="cards-content">
+
+                        <div class="cards"></div>
+                    </div>   
+                
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+    
+</html>

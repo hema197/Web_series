@@ -1,0 +1,131 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    background-image: url(bgimg.jpg);
+    
+}
+    
+h1{
+    text-align: center;
+    color: whitesmoke;
+    background-image: linear-gradient(to right, rgba(58, 56, 56, 0), rgb(15, 15, 15));
+}
+
+.content{
+    display: flex;
+    flex-grow:1;
+}
+.form{
+    flex:60%;
+    margin-left:10%;
+    margin-top:8%;
+
+}
+.label{
+    margin-left:10px;
+    margin-bottom:10px;
+    width:120px;
+    color:whitesmoke;
+    font-size:26px;
+    text-align: left;
+    display:inline-block;
+    
+}
+form input,form select{
+    
+    padding:5px;
+    margin-left:30px;
+    margin-bottom:15px;
+    border-radius:5px;
+    width:190px;
+    border:none;
+    outline:none;
+}
+form input:hover{
+    cursor: pointer;
+    border:1px solid yellow;
+}
+form select:hover{
+    border:1px solid yellow;
+    cursor: pointer;
+}
+.add{
+    text-align:center;
+    padding:5px;
+    width:70px;
+    height:30px;
+    margin-top:55px;
+    margin-left:25px;
+    border-radius:10px;
+    font-size:15px;
+    background-image: linear-gradient(to bottom, grey,black);
+    box-shadow: 0 1px 1px 0 black;
+    color:whitesmoke;
+    border:none;
+    outline:none;
+}
+.add:hover{
+    background-color:black;
+    opacity:1;
+    cursor:pointer;
+}
+.cards-content{
+    flex:40%;
+    border-left:2px solid yellow;
+    
+    
+}
+.cards{
+    margin-top:20px;
+    display: flex;
+    flex-flow:row wrap;
+    /*justify-content: space-around;*/
+    flex-grow:1;
+    
+}
+.show{
+  border:1px solid black;
+  border-radius:5px;
+  width:225px;
+  height:130px;
+  padding:5px;
+  margin:0 5px 30px 5px;
+  background-color:black;
+  opacity:0.5;
+  color:white;
+  box-shadow: 0 1px 1px yellow ;
+
+}
+ul{
+    list-style-type: none;
+}
+.delete{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+    text-align:center;
+    background-color:yellow;
+    color:black;
+    margin-top:13%;
+    border-radius:20px;
+}
+
+@media screen and (max-width:600px){
+    .content{
+        display:flex;
+        flex-direction:column;
+    }
+    .cards-content{
+        border-top:2px solid yellow;
+        margin-top:20px;
+        border-left:none;
+    }
+}
